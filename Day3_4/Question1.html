@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align-last: center;"> QuestionImage</h1>
+    </div>
+    <div class="container">
+        <div style="text-align-last: center; height: 100px;">
+            <img id="abc" src="img1.jpg" alt="None">
+            <div>
+                <button onclick="btn_1()">Come back </button>
+                <button onclick="btn_2()">Change image </button>
+                <button onclick="btn_3()">Change image </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function btn_1() {
+            document.getElementById("abc").src = "img1.jpg";
+        }
+
+        function btn_2() {
+            document.getElementById("abc").src = "img5.jpg";
+        }
+
+        function btn_3() {
+            document.getElementById("abc").src = "img2.jpg";
+        }
+    </script>
+</body>
+
+</html>

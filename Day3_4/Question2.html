@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Question 2</h2>
+        <div>
+            <input type="text" name="input1">
+            </br>
+            </br>
+            <input type="text" name="input2">
+            </br>
+            </br>
+            <input type="button" onclick="clickk()" value="Copy">
+        </div>
+    </div>
+    <script>
+        function clickk() {
+            var input_1 = document.getElementsByTagName("input").input1.value;
+            document.getElementsByTagName("input").input2.value = input_1;
+        }
+    </script>
+</body>
+
+</html>

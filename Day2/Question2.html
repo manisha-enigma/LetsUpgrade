@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Converting minute to seconds</title>
+    </head>
+    <body>
+        <div>
+            <lable>Enter a number:</lable>
+            <input type="number" id="id1">
+            <br>
+            <button onclick="Convert()"> Submit</button>
+            <p id="print"></p>
+            
+            
+        </div>
+        <script>
+            function Convert(){
+                var a = document.getElementById("id1").value;
+                var answer = a * 60;
+                document.getElementById("print").innerHTML = answer;
+            }
+        </script>
+    </body>
+</html>
