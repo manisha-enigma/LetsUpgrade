@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ * {
+ margin: 0px;
+ padding: 0px;
+ }
+ .tablebg {
+ font-family: Cambria, Cochin, serif;
+ margin-top: 5%;
+ height: 10%;
+ width: 80%;
+ margin-left: 10%;
+ margin-right: 10%;
+ background-color: bisque;
+ padding-bottom: 10%;
+ }
+ .tble {
+ width: 80%;
+ margin-left: 10%;
+ margin-top: 0.5%;
+ height: 100%;
+ }
+ h1 {
+ margin-top: 5%;
+ text-align: center;
+ font-family: sans-serif;
+ }
+ th,
+ td {
+ height: 100%;
+
+ text-align: center;
+ padding: 0.5%;
+ }
+ .ins-data {
+ height: 40%;
+ width: 80%;
+ margin-left: 10%;
+ margin-top: 0.5%;
+ margin-bottom: 2%;
+ }
+input {
+ padding: 0.7%;
+ height: 40%px;
+ width: 100px;
+ }
+ .ins_btn {
+ height: 60%px;
+ width: 12%;
+ padding: 0.7%;
+ }
+ .del_btn {
+ height: 100%px;
+ width: 100%;
+ }
+ .searchele {
+ font-family: Cambria, Cochin, serif;
+ margin-left: 10%;
+ height: 40%;
+ }
+ </style>
+</head>
+<body>
+ <h1>Bus Managment System!</h1>
+ <div class='tablebg'>
+ <h1>buses</h1>
+ <div class="ins-data">
+
+ <form onsubmit="insert(event)">
+ <input required type="text" placeholder="Name" id="ins-name" />
+ <input required type="text" placeholder="Source" id="ins-source" />
+ <input required type="text" placeholder="Destination" id="ins-dest" />
+ <input required type="number" placeholder=" bus Number" id="ins-number"/>
+ <input required type="number" placeholder="passenger capacity" id="ins-passcap" />
+ <button class="ins_btn" required >Add Bus</button>
+ </form>
+ </div>
+ <div class="searchele">
+ <input type="text" placeholder="search here!" onkeyup="search()" id="searching">
+ </div>
+ <table border="1" class='tble' cellspacing=0>
+ <thead>
+ <tr>
+ <th >Slno</th>
+ <th>Name</th>
+ <th>Source</th>
+ <th>Destination</th>
+ <th>Bus number</th>
+ <th>Passenger capacity</th>
+ <th>operation</th>
+ </tr>
+ </thead>
+ <tbody id="tablerows">
+
+ </tbody>
+ </table>
+ </div>
+ <script src='Question2.js'></script>
+</body>
+</html>
